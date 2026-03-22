@@ -1,0 +1,20 @@
+@use '../foundation/variables' as *;
+@use '../foundation/mixins' as *;
+
+.l-section {
+  position: relative;
+  padding-block: $section-padding;
+}
+
+.l-section--hero {
+  min-height: 100vh;
+  @include flex-center;
+}
+
+.l-section--compact {
+  padding-block: clamp(2rem, 4vw, 4rem);
+}
+
+.l-section--flush {
+  padding-block: 0;
+}

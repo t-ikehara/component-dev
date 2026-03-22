@@ -1,0 +1,97 @@
+// ============================================
+// Colors — サイトごとにカスタマイズ
+// ドミナント70% + サブ25% + アクセント5%
+// ============================================
+
+// Dark UI default
+$color-bg:      #0a0a0c;
+$color-fg:      #e8e4df;
+$color-accent:  #c9ff53;
+$color-muted:   #5a5650;
+$color-border:  rgba(#fff, 0.06);
+
+// ============================================
+// Typography
+// ============================================
+$font-display: 'Satoshi', sans-serif;
+$font-body:    'DM Sans', sans-serif;
+$font-jp:      'Noto Sans JP', sans-serif;
+
+// Size scale (rem)
+$font-size-xs:    0.875rem;  // 14px — caption minimum
+$font-size-sm:    1rem;      // 16px — body minimum
+$font-size-base:  1rem;
+$font-size-md:    1.25rem;   // 20px
+$font-size-lg:    1.5rem;    // 24px
+$font-size-xl:    2rem;      // 32px
+$font-size-2xl:   3rem;      // 48px
+$font-size-3xl:   4rem;      // 64px
+$font-size-4xl:   6rem;      // 96px
+
+// Line height
+$lh-heading:  1.05;
+$lh-body:     1.7;
+$lh-caption:  1.4;
+
+// Letter spacing
+$ls-tight:    -0.03em;   // Heading
+$ls-normal:   0;
+$ls-wide:     0.15em;    // Caption / Tag
+
+// ============================================
+// Spacing (8px grid)
+// ============================================
+$space-4:   0.25rem;
+$space-8:   0.5rem;
+$space-12:  0.75rem;
+$space-16:  1rem;
+$space-24:  1.5rem;
+$space-32:  2rem;
+$space-48:  3rem;
+$space-64:  4rem;
+$space-96:  6rem;
+$space-128: 8rem;
+
+// ============================================
+// Breakpoints
+// ============================================
+$bp-sm:   480px;
+$bp-md:   768px;
+$bp-lg:   1080px;
+$bp-xl:   1400px;
+$bp-2xl:  1920px;
+
+// ============================================
+// Layout
+// ============================================
+$container-max:     1400px;
+$container-narrow:  1100px;
+$container-padding: clamp(1.5rem, 4vw, 2.5rem);
+$section-padding:   clamp(4rem, 8vw, 8rem);
+
+// ============================================
+// Transition
+// ============================================
+$ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+$ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+$duration-fast:   0.2s;
+$duration-normal: 0.4s;
+$duration-slow:   0.8s;
+
+// ============================================
+// Z-index layers
+// ============================================
+$z-base:     1;
+$z-nav:      100;
+$z-overlay:  200;
+$z-modal:    300;
+$z-cursor:   400;
+$z-loader:   500;
+
+// ============================================
+// Border radius
+// ============================================
+$radius-sm:  4px;
+$radius-md:  12px;
+$radius-lg:  20px;
+$radius-full: 9999px;

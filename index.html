@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Component Library — Catalog</title>
+
+  <!-- GSAP Core + Plugins (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollSmoother.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/DrawSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/CustomEase.min.js"></script>
+
+  <!-- App -->
+  <script type="module" src="/src/js/app.js"></script>
+</head>
+<body>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <header class="l-section l-section--hero">
+        <div class="l-container u-text-center">
+          <p class="t-caption u-text-accent">Component Library</p>
+          <h1 class="t-display-xl">3D Site<br>Components</h1>
+          <p class="t-body-lg u-text-muted" style="margin-top: 1.5rem;">
+            66 patterns — 17 categories
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section class="l-section">
+          <div class="l-container">
+            <h2 class="t-display-sm" data-reveal>Navigation</h2>
+            <div class="l-grid l-grid--3" style="margin-top: 2rem;">
+              <a href="pages/preview-nav-a.html" class="catalog-card" data-reveal data-delay="0">nav-a — ミニマルバー</a>
+              <a href="pages/preview-nav-b.html" class="catalog-card" data-reveal data-delay="1">nav-b — フルスクリーンメニュー</a>
+              <a href="pages/preview-nav-c.html" class="catalog-card" data-reveal data-delay="2">nav-c — サイドナビ</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <h2 class="t-display-sm" data-reveal>Hero</h2>
+            <div class="l-grid l-grid--4" style="margin-top: 2rem;">
+              <a href="pages/preview-hero-a.html" class="catalog-card" data-reveal data-delay="0">hero-a — タイポグラフィ特化</a>
+              <a href="pages/preview-hero-b.html" class="catalog-card" data-reveal data-delay="1">hero-b — 3Dオブジェクト中央</a>
+              <a href="pages/preview-hero-c.html" class="catalog-card" data-reveal data-delay="2">hero-c — フルスクリーンWebGL</a>
+              <a href="pages/preview-hero-d.html" class="catalog-card" data-reveal data-delay="3">hero-d — スプリットレイアウト</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <h2 class="t-display-sm" data-reveal>About</h2>
+            <div class="l-grid l-grid--3" style="margin-top: 2rem;">
+              <a href="pages/preview-about-a.html" class="catalog-card" data-reveal data-delay="0">about-a — テキストリビール</a>
+              <a href="pages/preview-about-b.html" class="catalog-card" data-reveal data-delay="1">about-b — 数字＋キービジュアル</a>
+              <a href="pages/preview-about-c.html" class="catalog-card" data-reveal data-delay="2">about-c — 横スクロールタイムライン</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <h2 class="t-display-sm" data-reveal>Service</h2>
+            <div class="l-grid l-grid--4" style="margin-top: 2rem;">
+              <a href="pages/preview-service-a.html" class="catalog-card" data-reveal data-delay="0">service-a — 3Dカードフリップ</a>
+              <a href="pages/preview-service-b.html" class="catalog-card" data-reveal data-delay="1">service-b — アコーディオン</a>
+              <a href="pages/preview-service-c.html" class="catalog-card" data-reveal data-delay="2">service-c — 横スクロールカルーセル</a>
+              <a href="pages/preview-service-d.html" class="catalog-card" data-reveal data-delay="3">service-d — スティッキー左タイトル</a>
+              <a href="pages/preview-service-e.html" class="catalog-card" data-reveal data-delay="0">service-e — 番号リスト＋ホバー画像</a>
+              <a href="pages/preview-service-f.html" class="catalog-card" data-reveal data-delay="1">service-f — タブ切替</a>
+              <a href="pages/preview-service-g.html" class="catalog-card" data-reveal data-delay="2">service-g — フルスクリーンスナップ</a>
+              <a href="pages/preview-service-h.html" class="catalog-card" data-reveal data-delay="3">service-h — マウス追従画像リスト</a>
+              <a href="pages/preview-service-i.html" class="catalog-card" data-reveal data-delay="0">service-i — ベントグリッド</a>
+              <a href="pages/preview-service-j.html" class="catalog-card" data-reveal data-delay="1">service-j — フローチャート型</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <h2 class="t-display-sm" data-reveal>Feature</h2>
+            <div class="l-grid l-grid--4" style="margin-top: 2rem;">
+              <a href="pages/preview-feature-a.html" class="catalog-card" data-reveal data-delay="0">feature-a — ピン留め切替</a>
+              <a href="pages/preview-feature-b.html" class="catalog-card" data-reveal data-delay="1">feature-b — カウントアップグリッド</a>
+              <a href="pages/preview-feature-c.html" class="catalog-card" data-reveal data-delay="2">feature-c — ビフォーアフター</a>
+              <a href="pages/preview-feature-d.html" class="catalog-card" data-reveal data-delay="3">feature-d — ジグザグレイアウト</a>
+              <a href="pages/preview-feature-e.html" class="catalog-card" data-reveal data-delay="0">feature-e — 背景色スクロール切替</a>
+              <a href="pages/preview-feature-f.html" class="catalog-card" data-reveal data-delay="1">feature-f — フリップカード</a>
+              <a href="pages/preview-feature-g.html" class="catalog-card" data-reveal data-delay="2">feature-g — テキスト主導型</a>
+              <a href="pages/preview-feature-h.html" class="catalog-card" data-reveal data-delay="3">feature-h — アイコンバー＋展開</a>
+              <a href="pages/preview-feature-i.html" class="catalog-card" data-reveal data-delay="0">feature-i — パララックス多層</a>
+              <a href="pages/preview-feature-j.html" class="catalog-card" data-reveal data-delay="1">feature-j — インフォグラフィック</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <h2 class="t-display-sm" data-reveal>Works</h2>
+            <div class="l-grid l-grid--4" style="margin-top: 2rem;">
+              <a href="pages/preview-works-a.html" class="catalog-card" data-reveal data-delay="0">works-a — マウス追従画像リスト</a>
+              <a href="pages/preview-works-b.html" class="catalog-card" data-reveal data-delay="1">works-b — フィルタ付きグリッド</a>
+              <a href="pages/preview-works-c.html" class="catalog-card" data-reveal data-delay="2">works-c — フルスクリーンスライダー</a>
+              <a href="pages/preview-works-d.html" class="catalog-card" data-reveal data-delay="3">works-d — 横スクロールショーケース</a>
+              <a href="pages/preview-works-e.html" class="catalog-card" data-reveal data-delay="0">works-e — ケーススタディ縦積み</a>
+              <a href="pages/preview-works-f.html" class="catalog-card" data-reveal data-delay="1">works-f — サムネ一覧＋モーダル</a>
+              <a href="pages/preview-works-g.html" class="catalog-card" data-reveal data-delay="2">works-g — 数字ハイライト型</a>
+              <a href="pages/preview-works-h.html" class="catalog-card" data-reveal data-delay="3">works-h — インタラクティブマップ型</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <div class="l-grid l-grid--3">
+              <div>
+                <h2 class="t-display-sm" data-reveal>Product</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-product-a.html" class="catalog-card" data-reveal>product-a — 3Dモデルビューアー</a>
+                  <a href="pages/preview-product-b.html" class="catalog-card" data-reveal>product-b — スクロール連動分解</a>
+                  <a href="pages/preview-product-c.html" class="catalog-card" data-reveal>product-c — スペック比較テーブル</a>
+                </div>
+              </div>
+              <div>
+                <h2 class="t-display-sm" data-reveal>Team</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-team-a.html" class="catalog-card" data-reveal>team-a — グリッド＋ホバー切替</a>
+                  <a href="pages/preview-team-b.html" class="catalog-card" data-reveal>team-b — 横スクロールカード</a>
+                  <a href="pages/preview-team-c.html" class="catalog-card" data-reveal>team-c — 3D浮遊カード</a>
+                </div>
+              </div>
+              <div>
+                <h2 class="t-display-sm" data-reveal>Testimonial</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-testi-a.html" class="catalog-card" data-reveal>testi-a — スライドカード</a>
+                  <a href="pages/preview-testi-b.html" class="catalog-card" data-reveal>testi-b — 大型引用テキスト</a>
+                  <a href="pages/preview-testi-c.html" class="catalog-card" data-reveal>testi-c — ロゴウォール</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <div class="l-grid l-grid--3">
+              <div>
+                <h2 class="t-display-sm" data-reveal>Stats</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-stats-a.html" class="catalog-card" data-reveal>stats-a — カウントアップ</a>
+                  <a href="pages/preview-stats-b.html" class="catalog-card" data-reveal>stats-b — グラフアニメーション</a>
+                  <a href="pages/preview-stats-c.html" class="catalog-card" data-reveal>stats-c — マーキー数字</a>
+                </div>
+              </div>
+              <div>
+                <h2 class="t-display-sm" data-reveal>Process</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-process-a.html" class="catalog-card" data-reveal>process-a — 縦タイムライン</a>
+                  <a href="pages/preview-process-b.html" class="catalog-card" data-reveal>process-b — スクロール連動ステップ</a>
+                  <a href="pages/preview-process-c.html" class="catalog-card" data-reveal>process-c — 横スクロールフロー</a>
+                </div>
+              </div>
+              <div>
+                <h2 class="t-display-sm" data-reveal>News</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-news-a.html" class="catalog-card" data-reveal>news-a — カード型グリッド</a>
+                  <a href="pages/preview-news-b.html" class="catalog-card" data-reveal>news-b — リスト型</a>
+                  <a href="pages/preview-news-c.html" class="catalog-card" data-reveal>news-c — ティッカー型</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <div class="l-grid l-grid--3">
+              <div>
+                <h2 class="t-display-sm" data-reveal>CTA</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-cta-a.html" class="catalog-card" data-reveal>cta-a — フルスクリーンタイポ</a>
+                  <a href="pages/preview-cta-b.html" class="catalog-card" data-reveal>cta-b — 3Dオブジェクト背景</a>
+                  <a href="pages/preview-cta-c.html" class="catalog-card" data-reveal>cta-c — ミニマル一行</a>
+                  <a href="pages/preview-cta-d.html" class="catalog-card" data-reveal>cta-d — スプリットCTA</a>
+                  <a href="pages/preview-cta-e.html" class="catalog-card" data-reveal>cta-e — スティッキーバナー</a>
+                  <a href="pages/preview-cta-f.html" class="catalog-card" data-reveal>cta-f — カウントダウン型</a>
+                </div>
+              </div>
+              <div>
+                <h2 class="t-display-sm" data-reveal>Contact</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-contact-a.html" class="catalog-card" data-reveal>contact-a — スプリット型</a>
+                  <a href="pages/preview-contact-b.html" class="catalog-card" data-reveal>contact-b — ステップフォーム</a>
+                  <a href="pages/preview-contact-c.html" class="catalog-card" data-reveal>contact-c — マップ＋情報</a>
+                  <a href="pages/preview-contact-d.html" class="catalog-card" data-reveal>contact-d — ミニマルフォーム</a>
+                  <a href="pages/preview-contact-e.html" class="catalog-card" data-reveal>contact-e — インタラクティブ選択</a>
+                </div>
+              </div>
+              <div>
+                <h2 class="t-display-sm" data-reveal>Footer</h2>
+                <div style="margin-top: 1.5rem;">
+                  <a href="pages/preview-footer-a.html" class="catalog-card" data-reveal>footer-a — ミニマル一行</a>
+                  <a href="pages/preview-footer-b.html" class="catalog-card" data-reveal>footer-b — メガフッター</a>
+                  <a href="pages/preview-footer-c.html" class="catalog-card" data-reveal>footer-c — 巨大テキストクロージング</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-section">
+          <div class="l-container">
+            <h2 class="t-display-sm" data-reveal>Common</h2>
+            <div class="l-grid l-grid--4" style="margin-top: 2rem;">
+              <a href="pages/preview-marquee.html" class="catalog-card" data-reveal data-delay="0">marquee — 無限横スクロール</a>
+              <a href="pages/preview-divider.html" class="catalog-card" data-reveal data-delay="1">divider — セクション区切り</a>
+              <a href="pages/preview-loader.html" class="catalog-card" data-reveal data-delay="2">loader — プリローダー</a>
+              <a href="pages/preview-transition.html" class="catalog-card" data-reveal data-delay="3">transition — ページ遷移</a>
+              <a href="pages/preview-cursor.html" class="catalog-card" data-reveal data-delay="0">cursor — カスタムカーソル</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>

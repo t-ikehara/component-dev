@@ -1,0 +1,98 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+// ============================================
+// Media Queries
+// ============================================
+@mixin mq-up($bp) {
+  @media (min-width: $bp) { @content; }
+}
+
+@mixin mq-down($bp) {
+  @media (max-width: ($bp - 1px)) { @content; }
+}
+
+// Shorthand
+@mixin sm  { @include mq-up($bp-sm)  { @content; } }
+@mixin md  { @include mq-up($bp-md)  { @content; } }
+@mixin lg  { @include mq-up($bp-lg)  { @content; } }
+@mixin xl  { @include mq-up($bp-xl)  { @content; } }
+@mixin xxl { @include mq-up($bp-2xl) { @content; } }
+
+// ============================================
+// Typography helpers
+// ============================================
+@mixin font-display {
+  font-family: $font-display;
+  line-height: $lh-heading;
+  letter-spacing: $ls-tight;
+}
+
+@mixin font-body {
+  font-family: $font-body, $font-jp;
+  line-height: $lh-body;
+  letter-spacing: $ls-normal;
+}
+
+@mixin font-caption {
+  font-family: $font-body, $font-jp;
+  font-size: $font-size-xs;
+  line-height: $lh-caption;
+  letter-spacing: $ls-wide;
+  text-transform: uppercase;
+}
+
+// Fluid font size
+@mixin fluid-type($min-size, $max-size, $min-vw: 375px, $max-vw: 1920px) {
+  font-size: clamp(#{$min-size}, calc(#{$min-size} + #{strip-unit($max-size - $min-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})), #{$max-size});
+}
+
+@function strip-unit($value) {
+  @return math.div($value, $value * 0 + 1);
+}
+
+// ============================================
+// Layout helpers
+// ============================================
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin abs-fill {
+  position: absolute;
+  inset: 0;
+}
+
+@mixin cover-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// ============================================
+// Interaction
+// ============================================
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover { @content; }
+  }
+}
+
+@mixin focus-visible {
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+    @content;
+  }
+}
+
+// ============================================
+// Accessibility
+// ============================================
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

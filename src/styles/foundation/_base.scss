@@ -1,0 +1,37 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+html {
+  font-size: 100%; // 16px base
+  color-scheme: dark;
+}
+
+body {
+  @include font-body;
+  font-size: $font-size-base;
+  color: $color-fg;
+  background-color: $color-bg;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: $color-accent;
+  color: $color-bg;
+}
+
+img {
+  height: auto;
+}
+
+canvas {
+  display: block;
+}
+
+// Smooth scroll wrapper (for ScrollSmoother / Lenis)
+#smooth-wrapper {
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
+}

@@ -1,0 +1,57 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Display headings
+.t-display-xl {
+  @include font-display;
+  @include fluid-type(2.5rem, 6rem);
+  font-weight: 700;
+}
+
+.t-display-lg {
+  @include font-display;
+  @include fluid-type(2rem, 4rem);
+  font-weight: 700;
+}
+
+.t-display-md {
+  @include font-display;
+  @include fluid-type(1.5rem, 3rem);
+  font-weight: 600;
+}
+
+.t-display-sm {
+  @include font-display;
+  @include fluid-type(1.25rem, 2rem);
+  font-weight: 600;
+}
+
+// Body
+.t-body-lg {
+  @include font-body;
+  font-size: $font-size-md;
+}
+
+.t-body {
+  @include font-body;
+  font-size: $font-size-base;
+}
+
+.t-body-sm {
+  @include font-body;
+  font-size: $font-size-xs;
+}
+
+// Caption / Tag
+.t-caption {
+  @include font-caption;
+}
+
+// Max line width for readability
+.t-readable {
+  max-width: 65ch;
+}
+
+.t-readable-jp {
+  max-width: 35em;
+}

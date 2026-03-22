@@ -1,0 +1,25 @@
+// ============================================
+// Foundation
+// ============================================
+@use 'foundation/reset';
+@use 'foundation/base';
+@use 'foundation/typography';
+
+// ============================================
+// Layout
+// ============================================
+@use 'layout/l-container';
+@use 'layout/l-grid';
+@use 'layout/l-section';
+
+// ============================================
+// Utility
+// ============================================
+@use 'utility/u-visually-hidden';
+@use 'utility/u-text';
+@use 'utility/u-spacing';
+
+// ============================================
+// Components — 各コンポーネント制作時に追加
+// ============================================
+// @use '../components/hero/hero-a/c-hero-a';

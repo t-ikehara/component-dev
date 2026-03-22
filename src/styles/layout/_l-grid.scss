@@ -1,0 +1,25 @@
+@use '../foundation/variables' as *;
+@use '../foundation/mixins' as *;
+
+.l-grid {
+  display: grid;
+  gap: $space-24;
+
+  @include md {
+    gap: $space-32;
+  }
+}
+
+.l-grid--2 {
+  @include md { grid-template-columns: repeat(2, 1fr); }
+}
+
+.l-grid--3 {
+  @include md { grid-template-columns: repeat(2, 1fr); }
+  @include lg { grid-template-columns: repeat(3, 1fr); }
+}
+
+.l-grid--4 {
+  grid-template-columns: repeat(2, 1fr);
+  @include lg { grid-template-columns: repeat(4, 1fr); }
+}
